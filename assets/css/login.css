@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    height: 100%;
+    overflow: auto;
+}
+
+#logo{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.logo-img {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-text {
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 7px;
+}
+
+#left{
+    /* background: #28A745; */
+    background: #ffcc00;
+    background: #228b22;
+    background: linear-gradient(rgba(34, 139, 34, 0.5)70%, rgba(255, 184, 28, 0.5)), url("../img/bg3.jpg");
+    padding: 5rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center !important;
+    color: white;
+    background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-size: cover !important;
+}
+#left p{
+    font-size: 45px;
+    font-weight: 600;
+}
+#left p span{
+    display: block;
+    margin-bottom: -1rem;
+}
+#leftside{
+    position: fixed;
+}
+
+.login {
+    min-height: 100vh;
+}
+
+.login-heading {
+    font-weight: 600;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.60rem 1rem;
+    width: 7rem;
+}
+
+/* error text */
+#errortext, .input-error {
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 5;
+    animation: blink 2s infinite;
+}
+
+#back{
+    position: absolute !important;
+}
+@media screen and (max-width: 1000px) {
+    .login-heading {
+        padding-top: 2rem !important;
+    }
+}
+@media screen and (max-width: 736px) {
+    .login-heading{
+        padding-top: 2rem !important;
+    }
+}
+@media screen and (max-width:375px) {
+    .login-heading{
+        padding-top: 2rem !important;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
